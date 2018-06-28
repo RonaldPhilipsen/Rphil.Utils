@@ -1,0 +1,9 @@
+C:\Users\Ronald\Source\Repos\RPhil.Utils\RPhil.Utils\bin\Debug\netstandard2.0\RPhil.Utils.deps.json
+C:\Users\Ronald\Source\Repos\RPhil.Utils\RPhil.Utils\bin\Debug\netstandard2.0\RPhil.Utils.dll
+C:\Users\Ronald\Source\Repos\RPhil.Utils\RPhil.Utils\bin\Debug\netstandard2.0\RPhil.Utils.pdb
+C:\Users\Ronald\Source\Repos\RPhil.Utils\RPhil.Utils\obj\Debug\netstandard2.0\RPhil.Utils.csprojAssemblyReference.cache
+C:\Users\Ronald\Source\Repos\RPhil.Utils\RPhil.Utils\obj\Debug\netstandard2.0\RPhil.Utils.csproj.CoreCompileInputs.cache
+C:\Users\Ronald\Source\Repos\RPhil.Utils\RPhil.Utils\obj\Debug\netstandard2.0\RPhil.Utils.AssemblyInfoInputs.cache
+C:\Users\Ronald\Source\Repos\RPhil.Utils\RPhil.Utils\obj\Debug\netstandard2.0\RPhil.Utils.AssemblyInfo.cs
+C:\Users\Ronald\Source\Repos\RPhil.Utils\RPhil.Utils\obj\Debug\netstandard2.0\RPhil.Utils.dll
+C:\Users\Ronald\Source\Repos\RPhil.Utils\RPhil.Utils\obj\Debug\netstandard2.0\RPhil.Utils.pdb
