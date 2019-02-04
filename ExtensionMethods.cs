@@ -10,7 +10,6 @@
 
 namespace RPhil.Utils
 {
-    using System;
     using System.IO;
     using System.Runtime.Serialization.Formatters.Binary;
 
@@ -28,11 +27,6 @@ namespace RPhil.Utils
         /// <param name="propName">The property name. </param>
         /// <param name="value">The value. </param>
         public static void SetPropValue(this object src, string propName, string value) => src.GetType().GetProperty(propName)?.SetValue(src, value);
-
-        /// <summary>converts a byte to a binary string </summary>
-        /// <param name="b">the given byte </param>
-        /// <returns>the new binary string </returns>
-        public static string ToBinaryString(this byte b) => Convert.ToString(b, 2).PadLeft(8, '0');
 
         /// <summary>Copies T by value </summary>
         /// <param name="item">The item. </param>

@@ -48,7 +48,7 @@ namespace RPhil.Utils
             {
                 Array.Resize(ref result, j + 1);
                 result[j] = (byte)Convert.ToInt32(stringParam.Substring(k, 2), 16);
-                j = j + 1;
+                ++j;
             }
 
             return result;
@@ -92,5 +92,10 @@ namespace RPhil.Utils
 
             return ascii;
         }
+
+        /// <summary>converts a byte to a binary string </summary>
+        /// <param name="b">the given byte </param>
+        /// <returns>the new binary string </returns>
+        public static string ToBinaryString(this byte b) => Convert.ToString(b, 2).PadLeft(8, '0');
     }
 }
