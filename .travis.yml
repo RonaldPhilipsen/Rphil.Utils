@@ -3,8 +3,5 @@ mono: none
 dotnet: 2.1.502
 solution: Rphil.utils.sln
 script:
-  - dotnet tool install coverlet.console
   - dotnet restore
-  - dotnet test
-  - coverlet --target "dotnet" --targetargs "test --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=lcov" --include "[Rphil.Utils.*]*" 
- 
+  - dotnet test 
