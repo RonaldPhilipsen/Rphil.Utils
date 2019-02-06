@@ -1,11 +1,21 @@
-namespace Rphil.Utils.tests
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="MathTests.cs" company="Philipsen IT">
+//    Copyright 2019 Philipsen IT
+// </copyright>
+// <summary>
+//   Defines the MathTests type.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+namespace Rphil.Utils.Tests
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using RPhil.Utils;
 
+    /// <summary> Defines tests for several math extensions </summary>
     [TestClass]
     public class MathTests
     {
+        /// <summary> Tests the between method </summary>
         [TestMethod]
         public void TestBetween()
         {
@@ -22,48 +32,54 @@ namespace Rphil.Utils.tests
             Assert.IsFalse(test4.Between(min, max));
         }
 
+        /// <summary> Tests the is bit set method </summary>
         [TestMethod]
         public void TestIsBitSet()
         {
             for (var i = 0; i < 8; i++)
             {
-                var val = (1 << i);
+                var val = 1 << i;
                 Assert.IsTrue(val.IsBitSet(i));
-                Assert.IsFalse(val.IsBitSet(i-1));
+                Assert.IsFalse(val.IsBitSet(i - 1));
             }
         }
 
+        /// <summary> Tests the set bit method </summary>
         [TestMethod]
         public void TestSetBit()
         {
+            const int Value = 0;
+
             for (var i = 0; i < 8; i++)
             {
-                var value = 0;
-                var res = value.SetBit(i);
+                var res = Value.SetBit(i);
                 Assert.IsTrue(res == (1 << i));
             }
         }
 
+        /// <summary> Tests for the toggle bit </summary>
         [TestMethod]
         public void TestToggleBit()
         {
+            const int Value = 0;
             for (var i = 0; i < 8; i++)
             {
-                var value = 0;
-                var res = value.ToggleBit(i);
+                var res = Value.ToggleBit(i);
                 Assert.IsTrue(res == (1 << i));
                 var res2 = res.ToggleBit(i);
                 Assert.IsFalse(res2 == (1 << i));
             }
         }
 
+        /// <summary> Tests for the unset bit method </summary>
         [TestMethod]
         public void TestUnsetBit()
         {
+            const byte Value = 255;
+
             for (var i = 0; i < 8; i++)
             {
-                byte value = 255;
-                var res = value.UnsetBit(i);
+                var res = Value.UnsetBit(i);
                 Assert.IsTrue(res == 255 - (1 << i));
             }
         }

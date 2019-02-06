@@ -52,7 +52,6 @@ namespace RPhil.Utils
             var network1 = address.GetNetworkAddress(subnetMask);
             var network2 = address2.GetNetworkAddress(subnetMask);
 
-
             return network1.Equals(network2);
         }
 

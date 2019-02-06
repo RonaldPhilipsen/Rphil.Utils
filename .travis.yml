@@ -1,10 +1,10 @@
-os: windows
 language: csharp
 mono: none
+dotnet: 2.1.502
 solution: Rphil.utils.sln
 script:
-  - choco install dotnetcore-sdk --pre 
-  - choco install opencover.portable
+  - dotnet tool install --global coverlet.console
   - dotnet restore
   - dotnet test
-  - OpenCover.Console.exe -register -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:test -filter:"+[Rphil.Utils.*]*" -output:".\Rphil_Utils_coverage.xml"  -oldstyle
+  - coverlet --target "dotnet" --targetargs "test --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=lcov" --include "[Rphil.Utils.*]*" 
+ 

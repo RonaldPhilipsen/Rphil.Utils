@@ -45,25 +45,26 @@ namespace RPhil.Utils
             return (value & (1 << bitToCheck)) != 0;
         }
 
-        /// <summary>Sets a bit in a byte </summary>
-        /// <param name="val">the given value </param>
-        /// <param name="pos">the position </param>
-        /// <returns>the new byte </returns>
+        /// <summary> Sets a bit </summary>
+        /// <typeparam name="T"> The type </typeparam>
+        /// <param name="val"> the given value </param>
+        /// <param name="pos"> the position of the bit </param>
+        /// <returns> the new value </returns>
         public static T SetBit<T>(this T val, int pos)
             where T : struct, IConvertible
         {
             var value = val.ToInt64(CultureInfo.CurrentCulture);
-              
+
             if (pos < 0 || pos > 64)
             {
                 throw new ArgumentOutOfRangeException(nameof(pos), "Index not in range");
             }
 
-            return  (T) Convert.ChangeType(value | (1 << pos),
-                                           typeof(T));
+            return (T)Convert.ChangeType(value | (1 << pos), typeof(T));
         }
 
         /// <summary>Toggles a bit in a byte </summary>
+        /// <typeparam name="T"> the Type </typeparam>
         /// <param name="val">the given value </param>
         /// <param name="pos">the position </param>
         /// <returns>the new byte </returns>
@@ -76,11 +77,11 @@ namespace RPhil.Utils
                 throw new ArgumentOutOfRangeException(nameof(pos), "Index not in range");
             }
 
-            return (T)Convert.ChangeType(value ^ (1 << pos),
-                                         typeof(T));
+            return (T)Convert.ChangeType(value ^ (1 << pos), typeof(T));
         }
 
         /// <summary>un sets a bit in a byte </summary>
+        /// <typeparam name="T"> the Type </typeparam>
         /// <param name="val">the given value </param>
         /// <param name="pos">the position </param>
         /// <returns>the new byte </returns>

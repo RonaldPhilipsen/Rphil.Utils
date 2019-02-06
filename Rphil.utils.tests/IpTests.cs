@@ -1,13 +1,24 @@
-using System.Net;
-
-namespace Rphil.Utils.tests
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="IpTests.cs" company="Philipsen IT">
+//  Copyright 2019 Philipsen IT  
+// </copyright>
+// <summary>
+//   Defines Tests for the IP utils class.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+namespace Rphil.Utils.Tests
 {
+    using System.Net;
+
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+
     using RPhil.Utils;
 
+    /// <summary> The ip tests. </summary>
     [TestClass]
     public class IpTests
     {
+        /// <summary> Tests the lookup for the broadcast address. </summary>
         [TestMethod]
         public void TestBroadCastLookup()
         {
@@ -19,6 +30,7 @@ namespace Rphil.Utils.tests
             Assert.IsTrue(calculatedBroadcastAddress.Equals(expectedBroadcastAddress));
         }
 
+        /// <summary> Tests the subnet check  </summary>
         [TestMethod]
         public void TestSubnetCheck()
         {
