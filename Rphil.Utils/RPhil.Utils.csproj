@@ -6,6 +6,9 @@
     <AssemblyOriginatorKeyFile>RphilUtils.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
     <AutoGenerateBindingRedirects>False</AutoGenerateBindingRedirects>
+    <RepositoryUrl>https://github.com/ronald245/Rphil.Utils</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageLicenseUrl>https://github.com/ronald245/Rphil.Utils/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -15,6 +18,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <CodeAnalysisRuleSet></CodeAnalysisRuleSet>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
 
   <ItemGroup>
