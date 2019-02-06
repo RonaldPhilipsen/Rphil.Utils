@@ -1,7 +1,7 @@
 os: windows
 language: csharp
 mono: none
-dotnet: 2.2.100
+dotnet: 2.1.502
 solution: Rphil.utils.sln
 script:
   - choco install opencover.portable
