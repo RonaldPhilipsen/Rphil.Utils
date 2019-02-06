@@ -1,13 +1,12 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="MathExtensions.cs" company="Solid Optics">
-//   
-// Copyright 2017 Solid Optics. </copyright>
+// <copyright file="MathExtensions.cs" company="Philipsen IT">  
+//   Copyright 2019 Philipsen IT.
+// </copyright>
 // <author>Ronald Philipsen</author>
 // <summary>
-//   Extensions that have to do with numbers
+//   Extension methods to make math a bit easier
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-
 namespace RPhil.Utils
 {
     using System;

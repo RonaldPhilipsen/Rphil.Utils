@@ -2,6 +2,7 @@
 // <copyright file="IpTests.cs" company="Philipsen IT">
 //  Copyright 2019 Philipsen IT  
 // </copyright>
+// <author>Ronald Philipsen</author>
 // <summary>
 //   Defines Tests for the IP utils class.
 // </summary>

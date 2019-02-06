@@ -1,13 +1,12 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="IPAddressExtensions.cs" company="Solid Optics">
-//   
-// Copyright 2017 Solid Optics. </copyright>
+// <copyright file="IPAddressExtensions.cs" company="Philipsen IT">  
+//   Copyright 2019 Philipsen IT.
+// </copyright>
 // <author>Ronald Philipsen</author>
 // <summary>
 //   The internet protocol address extensions.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-
 namespace RPhil.Utils
 {
     using System;

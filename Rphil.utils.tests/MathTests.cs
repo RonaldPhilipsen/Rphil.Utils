@@ -2,6 +2,7 @@
 // <copyright file="MathTests.cs" company="Philipsen IT">
 //    Copyright 2019 Philipsen IT
 // </copyright>
+// <author>Ronald Philipsen</author>
 // <summary>
 //   Defines the MathTests type.
 // </summary>

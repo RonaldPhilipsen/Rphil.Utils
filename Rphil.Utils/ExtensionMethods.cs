@@ -1,13 +1,12 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="ExtensionMethods.cs" company="Solid Optics">
-//   
-// Copyright 2017 Solid Optics. </copyright>
+// <copyright file="ExtensionMethods.cs" company="Philipsen IT">  
+//   Copyright 2019 Philipsen IT.
+// </copyright>
 // <author>Ronald Philipsen</author>
 // <summary>
-//   General purpose extension methods.
+//   General purpose Extension methods
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-
 namespace RPhil.Utils
 {
     using System.IO;
