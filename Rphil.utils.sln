@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPhil.Utils", ".\Rphil.Utils\RPhil.Utils.csproj", "{3A802ECA-5C54-493C-A807-FC1175DABBA4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rphil.Utils.tests", ".\Rphil.Utils.tests\Rphil.Utils.tests.csproj", "{A7EDF1DF-C48C-48F8-8146-F9F425947AF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rphil.Utils.Tests", ".\Rphil.Utils.Tests\Rphil.Utils.Tests.csproj", "{A7EDF1DF-C48C-48F8-8146-F9F425947AF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
