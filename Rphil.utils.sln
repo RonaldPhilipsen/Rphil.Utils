@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28527.54
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rphil.utils", "Rphil.utils\Rphil.utils.csproj", "{48C1ADC9-C26A-4E3D-969C-F6BA4364A237}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPhil.Utils", ".\Rphil.Utils\RPhil.Utils.csproj", "{3A802ECA-5C54-493C-A807-FC1175DABBA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rphil.Utils.tests", ".\Rphil.Utils.tests\Rphil.Utils.tests.csproj", "{A7EDF1DF-C48C-48F8-8146-F9F425947AF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{48C1ADC9-C26A-4E3D-969C-F6BA4364A237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48C1ADC9-C26A-4E3D-969C-F6BA4364A237}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48C1ADC9-C26A-4E3D-969C-F6BA4364A237}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48C1ADC9-C26A-4E3D-969C-F6BA4364A237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A802ECA-5C54-493C-A807-FC1175DABBA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A802ECA-5C54-493C-A807-FC1175DABBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A802ECA-5C54-493C-A807-FC1175DABBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A802ECA-5C54-493C-A807-FC1175DABBA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7EDF1DF-C48C-48F8-8146-F9F425947AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7EDF1DF-C48C-48F8-8146-F9F425947AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7EDF1DF-C48C-48F8-8146-F9F425947AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7EDF1DF-C48C-48F8-8146-F9F425947AF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
