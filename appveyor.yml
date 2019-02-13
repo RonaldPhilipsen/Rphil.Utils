@@ -1,0 +1,14 @@
+before_build:
+ - dotnet restore
+build_script:
+ - dotnet build
+
+test_script:
+ - dotnet test
+ - .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:test -filter:"+[Rphil.Utils.*]*" -output:".\coverage.xml"  -oldstyle
+
+after_test:
+ - ps: |
+      $env:PATH = 'C:\msys64\usr\bin;' + $env:PATH
+      Invoke-WebRequest -Uri 'https://codecov.io/bash' -OutFile codecov.sh
+      bash codecov.sh -f "coverage.xml" -t YourUploadToken
