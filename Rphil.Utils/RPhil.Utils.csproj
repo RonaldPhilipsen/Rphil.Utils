@@ -24,7 +24,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="2.10.0" />
-    <PackageReference Include="OpenCover" Version="4.7.922" />
+    <PackageReference Include="OpenCover" Version="4.7.1221" />
   </ItemGroup>
 
 </Project>
